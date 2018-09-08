@@ -1,0 +1,64 @@
+@import '../assets/theme.sass'
+
+$app-max-width: 640px;
+
+.app
+    background-color: $color-white
+    height: 100vh
+    font-family: 'Lekton', sans-serif
+    margin: 0 auto
+    max-width: $app-max-width
+    position: relative
+
+    -webkit-box-shadow: 0 0 50px 0 rgba(0,0,0,.3)
+    -moz-box-shadow: 0 0 50px 0 rgba(0,0,0,.3)
+    box-shadow: 0 0 50px 0 rgba(0,0,0,.3)
+
+.app-header
+    background-color: $primary-color
+    color: $primary-text-color
+    max-width: $app-max-width
+    position: fixed
+    padding: 10px 0
+    top: 0
+    width: 100%
+    z-index: 100
+
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.2)
+    -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,.2)
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.2)
+
+    h1
+        margin: 0 10px
+
+.app-footer
+    background-color: $primary-color
+    bottom: 0
+    color: $primary-text-color
+    max-width: $app-max-width
+    padding: 4px 0
+    position: fixed
+    text-align: right
+    width: 100%
+    z-index: 100
+    span
+        margin: 0 10px
+
+.app-body
+    background-color: $color-white
+    height: -webkit-calc(100vh - 75px - 35px)
+    height:    -moz-calc(100vh - 75px - 35px)
+    height:         calc(100vh - 75px - 35px)
+    overflow-y: scroll
+    position: relative
+    top: 75px
+    width: 100%
+
+@media only screen
+    .scrollbar::-webkit-scrollbar
+        width: 10px
+        background-color: $divider-color
+
+    .scrollbar::-webkit-scrollbar-thumb
+        border-radius: 4px
+        background-color: $secondary-text-color
