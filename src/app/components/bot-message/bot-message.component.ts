@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'bot-message',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bot-message.component.sass']
 })
 export class BotMessageComponent implements OnInit {
+
+  @Input() message;
 
   constructor() { }
 

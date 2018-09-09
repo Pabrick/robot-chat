@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'user-message',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-message.component.sass']
 })
 export class UserMessageComponent implements OnInit {
+
+  @Input() message;
 
   constructor() { }
 

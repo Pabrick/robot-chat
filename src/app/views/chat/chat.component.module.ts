@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BotMessageComponent } from '../components/bot-message/bot-message.component';
-import { UserMessageComponent } from '../components/user-message/user-message.component';
+import { NgModule } from '@angular/core';
+import { BotMessageComponent } from '../../components/bot-message/bot-message.component';
+import { UserMessageComponent } from '../../components/user-message/user-message.component';
 
 @NgModule({
   declarations: [

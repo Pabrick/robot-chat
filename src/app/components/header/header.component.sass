@@ -1,0 +1,38 @@
+@import '../../../styles/theme.sass'
+
+.app-header
+    background-color: $primary-color
+    color: $color-white
+    display: table
+    flex-grow: 0
+    height: $app-header-height
+    width: 100%
+
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.2)
+    -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,.2)
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.2)
+
+    %header-cell
+        display: table-cell
+        vertical-align: middle
+
+    .header-title
+        @extend %header-cell
+
+    .header-logo
+        @extend %header-cell
+        width: $app-header-height + 10px
+
+        figure
+            -webkit-margin-before: 0
+            -webkit-margin-after: 0
+            -webkit-margin-start: 0
+            -webkit-margin-end: 0
+            border-radius: 50%
+            background-image: url('../../../' + $app-url-logo)
+            background-color: $accent-color
+            background-size: $app-header-height $app-header-height
+            background-position: -5px 0
+            margin: 0 auto
+            height: $app-header-height - 10px
+            width: $app-header-height - 10px
